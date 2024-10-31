@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt ArialMiguel;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nome = window.prompt('Qual é seu nome')
+        document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em maiusculas é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minusculas é ${nome.toLowerCase()}`)
+
+        /*
+            Para ajustar numeros é possivel usar
+                .to fixed(Numero de casas) : para deixar com uma quantidade de casas
+
+                se quiser o virgula use
+                .replace('.', ',')
+                trocando o "." pela ","
+
+                .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+                para colocar o tipo de moeda do pais selecionado pelo ultimo currency
+        */
+    </script>
+</body>
+</html>
