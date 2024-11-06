@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(67, 101, 152);
+            color: white;
+            font: normal 18pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        // document.write('Olá, Mundo!') - Escreve olá mundo
+
+        // document.write(document.charset) - mostra o "charset"
+        
+        // document.write(navigator.appName) - mostra o nome q o navegador segue como comportamento
+
+        // document.write(document.URL) - mostra a URL do site
+
+        let corpo = document.body
+        let p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue' // o ".style" faz com que voce possa mudar o style do item selecionado
+
+        let d = document.querySelector('div#msg') // seleciona dizendo a tag, se é por id ou class usando "#" ou "." e dizendo qual o nome do id/classe 
+
+        d.style.background= 'blue'
+
+        //let d = document.getElementsByName('msg')[0] faz a variavel receber a tag por name
+
+        // let d = document.getElementById('msg') faz a variavel receber a tag por id
+
+        // let d = document.getElementsByClassName('msg') faz a variavel receber a tag pelo nome da classe podendo mudar mais de uma tag
+
+        // d.innerText = 'Estou aguardando...' faz com q o innertext da variavel receba o texto digitado
+
+        // d.innerText += ' ainda estou esperando' // faz com que o innertext da variavel some o texto que ja esta pelo que voce colocou
+
+        // document.write('Esta escrito assim ' + p1.innerText) inner text mostra o texto q ta dentro do elemento
+    </script>
+</body>
+</html>
