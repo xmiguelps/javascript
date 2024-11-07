@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background-color: rgb(42, 133, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        /*Uma função é onde voce coloca um bloco de comandos que vai ser executado quando o evento especifico selecionado acontecer, é possivel colocar mais de um evento
+        
+        Exemplo: function *ação*() {
+            [BLOCO DE COMANDOS]
+        }
+
+        dentro do "()" é possivel ter parametros
+        */
+
+    /*Exemplos de eventos 
+
+        mouseenter - faz ocorrer um evento quando o mouse entra na caixa
+        
+        mousemove - faz ocorrer um evento quando o mouse se move dentro da caixa
+        
+        mousedown - faz ocorrer um evento quando voce clica e segura p´[
+        1   '
+        ''] o mouse
+        
+        mouseup - faz ocorrer um evento quando voce solta o clique
+        
+        click - faz ocorrer um evento quando aperta e solta rapidamente
+        
+        mouseout - faz ocorrer um evento quando voce tira o mouse da caixa*/
+
+        /*
+            2 jeitos de exercer um evento à algo
+            
+                1° - coloque na tag "on" e o evento que voce quer fazer e de um nome para ele colocando "()" no final
+                    Exemplo: 
+                        onclick="*nome*()"
+            
+                2° - no script coloque o nome da variavel que esta com o item e:
+                        .addEventListener('*o nome do evento que voce quer sem o "on"*, *nome que voce da para a função*')
+                    Exemplo:
+                        *varialvel*.addEventListener('click', clicar)
+        */
+        let area = document.getElementById("area")
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+        /*Se colocar a varialvel dentro da function, ela só vai funcionar naquela function*/
+    </script>
+</body>
+</html>
