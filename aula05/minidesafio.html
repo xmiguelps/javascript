@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Originalidade</title>
+    <style>
+        body {
+            font: normal 16px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Veja se é estrangeiro ou Brasileiro</h1>
+     Eu nasci no <input type="text" name="pais" id="pais">
+     <input type="button" value="Verificar" onclick="verificar()">
+     <div id="res"></div>
+
+     <script>
+        function verificar() {
+            let question = document.getElementById('pais')
+            let pais = String(question.value)
+            let res = document.querySelector('div#res')
+            res.innerHTML = `<p>Voce mora no <strong>${pais}</strong></p>`
+            if (pais == 'Brasil' || pais == 'brasil') {
+                res.innerHTML += `<p>Voce é <strong>brasileiro<strong></p>`
+            } else {
+                res.innerHTML += `<p> Voce é <strong>estrangeiro</strong></p>`
+            }
+        }
+     </script>
+</body>
+</html>
