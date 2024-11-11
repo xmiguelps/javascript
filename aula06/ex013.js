@@ -23,7 +23,5 @@ switch (diasem) {
         console.log('sabado')
     default:
         console.log('[ERRO] Dia invalido')
-        break-+
-        ......diasem.toExponential......diasem......diasem.toExponential.apply.apply......diasem.toExponential.apply.apply.apply.apply.apply.apply...diasem.toExponential.apply.apply.apply.apply.apply...diasem...diasem.toExponential.apply.........diasem.toExponential.apply.apply.        
-
+        break
 }
