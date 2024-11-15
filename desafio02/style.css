@@ -25,3 +25,7 @@ footer {
     font-style: italic;
     text-decoration: underline;
 }
+
+div {
+    text-align: center;
+}
