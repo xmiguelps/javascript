@@ -26,6 +26,6 @@ footer {
     text-decoration: underline;
 }
 
-div {
-    text-align: center;
+div#res {
+    margin-top: 10px;
 }
