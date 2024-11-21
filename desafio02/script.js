@@ -15,43 +15,43 @@ function verificar() {
         alert('[ERRO] REVISE O FORMULARIO E TENTE NOVAMENTE')
     } else if (male.checked == true && idade < 5) {
         res.innerHTML = `Detectamos Bebe de ${idade} anos`
-        img.setAttribute('src', 'bebe-masculino.jpg')
+        img.setAttribute('src', 'imagens/bebe-masculino.jpg')
         //foto de bebe masculino
     } else if (male.checked == true && idade < 12) {
         res.innerHTML = `Detectamos Menino de ${idade} anos`
-        img.setAttribute('src', 'criança-masculino.jpg')
+        img.setAttribute('src', 'imagens/criança-masculino.jpg')
         //foto de criança masculina
     } else if (male.checked == true && idade < 17) {
         res.innerHTML = `Detectamos Adolescente de ${idade} anos`
-        img.setAttribute('src', 'adolescente-masculino.jpg')
+        img.setAttribute('src', 'imagens/adolescente-masculino.jpg')
         //foto de adolescente masculino
     } else if (male.checked == true && idade < 56) {
         res.innerHTML = `Detectamos Homem de ${idade} anos`
-        img.setAttribute('src', 'adulto-masculino.jpg') 
+        img.setAttribute('src', 'imagens/adulto-masculino.jpg') 
         //foto de adulto masculino
     } else if (male.checked == true && idade < 100) {
         res.innerHTML = `Detectamos Idoso de ${idade} anos`
-        img.setAttribute('src', 'idoso-masculino.jpg')
+        img.setAttribute('src', 'imagens/idoso-masculino.jpg')
         //foto de idoso masculino
     } else if (female.checked == true && idade < 5) {
         res.innerHTML = `Detectamos Bebe de ${idade} anos`
-        img.setAttribute('src', 'bebe-feminino.jpg')
+        img.setAttribute('src', 'imagens/bebe-feminino.jpg')
         //foto de bebe feminino
     } else if (female.checked == true && idade < 12) {
         res.innerHTML = `Detectamos Menina de ${idade} anos`
-        img.setAttribute('src', 'criança-feminino.jpg')
+        img.setAttribute('src', 'imagens/criança-feminino.jpg')
         //foto de criança feminina
     } else if (female.checked == true && idade < 17) {
         res.innerHTML = `Detectamos Adolescente de ${idade} anos`
-        img.setAttribute('src', 'adolescente-feminino.jpg')
+        img.setAttribute('src', 'imagens/adolescente-feminino.jpg')
         //foto de adolescente feminino
     } else if (female.checked == true && idade < 56) {
         res.innerHTML = `Detectamos Mulher de ${idade} anos`
-        img.setAttribute('src', 'adulto-feminino.jpg')
+        img.setAttribute('src', 'imagens/adulto-feminino.jpg')
         //foto de adulto feminino
     } else if (female.checked == true && idade < 100) {
         res.innerHTML = `Detectamos Idosa de ${idade} anos`
-        img.setAttribute('src', 'idoso-feminino.jpg')
+        img.setAttribute('src', 'imagens/idoso-feminino.jpg')
         //foto de idoso feminino
     }
     res.appendChild(img)
